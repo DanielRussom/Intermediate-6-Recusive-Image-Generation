@@ -24,10 +24,16 @@ public class Controller extends JApplet {
 	
 	public void paint(Graphics g) {
 		Graphics2D g2 = (Graphics2D) g;
+		// Draws a triangle
+		int[] xCoords = new int[] {100,200,0};
+		int[] yCoords = new int[] {0,200,200};
+		g2.drawPolygon(xCoords, yCoords, 3);
+		/* Draws a rectangle
 		g2.draw(new Rectangle2D.Double(0, 0, 100, 50));
 		g2.draw(new Rectangle2D.Double(0, 0, 50, 25));
 		g2.draw(new Rectangle2D.Double(50, 0, 50, 25));
 		g2.draw(new Rectangle2D.Double(0, 25, 50, 25));
 		g2.draw(new Rectangle2D.Double(50, 25, 50, 25));
+		*/
 	}
 }
